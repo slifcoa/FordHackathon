@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 664385151}
   - component: {fileID: 664385150}
   - component: {fileID: 664385154}
+  - component: {fileID: 664385155}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -233,6 +234,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCarModel: {fileID: 664385153}
   m_tiresModel: {fileID: 0}
+--- !u!114 &664385155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664385149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f41de5b55e1cf46a99524b4ba1367079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1008642423
 PrefabInstance:
   m_ObjectHideFlags: 0
