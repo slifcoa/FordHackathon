@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Doozy.Engine.UI.Animation;
 using UnityEngine;
 
 public class MyCar : MonoBehaviour
@@ -11,26 +12,33 @@ public class MyCar : MonoBehaviour
 
     private Transform m_selectedPart;
 
+    public bool rotateLeft = false;
+    public bool rotateRight = false;
+    public bool rotateUp = false;
+    public bool rotateDown = false;
+
+    public GameObject[] exhaust;
+
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftArrow)) {
-            myCarModel.Rotate(Vector3.up, Space.World);
+        if (rotateLeft) {
+            RotateVehicle(Vector3.up);
         }
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (rotateRight)
         {
-            myCarModel.Rotate(Vector3.down, Space.World);
+            RotateVehicle(Vector3.down);
         }
 
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (rotateUp)
         {
-            myCarModel.Rotate(Vector3.right, Space.World);
+            RotateVehicle(Vector3.right);
         }
 
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (rotateDown)
         {
-            myCarModel.Rotate(Vector3.left, Space.World);
+            RotateVehicle(Vector3.left);
         }
     }
 
@@ -55,7 +63,18 @@ public class MyCar : MonoBehaviour
             //Unhighlight
     }
 
-    
+    public void RotateVehicle(Vector3 dir)
+    {
+        myCarModel.Rotate(dir, Space.World);
+    }
 
-    
+    public void SetCarIgnition(bool b)
+    {
+        foreach (var e in exhaust)
+            e.SetActive(b);
+    }
+
+
+
+
 }

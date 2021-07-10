@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThemesNames:
   - General
+  - Neumorph One
   Themes:
   - {fileID: 11400000, guid: 80ce5153e1ed2b8458a1ba9e6289567c, type: 2}
+  - {fileID: 11400000, guid: ea20085c7e1f7824792194621349c0e3, type: 2}

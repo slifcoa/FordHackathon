@@ -25,13 +25,13 @@ public class GetVehicleStatus
 
         public override string ToString()
         {
-            return string.Format("Lock Status: {0} \n Alarm: {1}", lockStatus, alarm);
+            return string.Format("Lock Status: {0} \n Alarm: {1} \n", lockStatus, alarm);
         }
     }
 
     public override string ToString()
     {
-        return string.Format("Status: {0} \n Command Status: {1} \n Command Id: {2} \n Vehicle Status: {3}", status,
+        return string.Format("Status: {0} \n Command Status: {1} \n Command Id: {2} \n Vehicle Status: {3} \n", status,
             commandStatus, commandId, vehiclestatus);
     }
 }

@@ -84,6 +84,30 @@ namespace Doozy.Engine.UI
                 button.OnClick.OnTrigger.Event.AddListener(callbacks[i]);
             }
         }
+        
+        public void SetButtonsOnPtrDownCallbacks(params UnityAction[] callbacks)
+        {
+            if (callbacks == null || callbacks.Length == 0 || !HasButtons) return;
+            for (int i = 0; i < Buttons.Count; i++)
+            {
+                UIButton button = Buttons[i];
+                if (button == null) continue;
+                if (callbacks[i] == null) continue;
+                button.OnPointerDown.OnTrigger.Event.AddListener(callbacks[i]);
+            }
+        }
+        
+        public void SetButtonsOnPtrUpCallbacks(params UnityAction[] callbacks)
+        {
+            if (callbacks == null || callbacks.Length == 0 || !HasButtons) return;
+            for (int i = 0; i < Buttons.Count; i++)
+            {
+                UIButton button = Buttons[i];
+                if (button == null) continue;
+                if (callbacks[i] == null) continue;
+                button.OnPointerUp.OnTrigger.Event.AddListener(callbacks[i]);
+            }
+        }
 
         /// <summary>
         ///     Sets the passed strings as the referenced Buttons label text.

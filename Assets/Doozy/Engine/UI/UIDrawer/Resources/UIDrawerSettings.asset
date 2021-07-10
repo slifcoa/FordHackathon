@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: UIDrawerSettings
   m_EditorClassIdentifier: 
   database: {fileID: 11400000, guid: c92079736172b7049859a75192336b70, type: 2}
-  CloseDirection: 1
+  CloseDirection: 2
   CustomStartAnchoredPosition: {x: 0, y: 0, z: 0}
   BlockBackButton: 1
   HideOnBackButton: 1
   DetectGestures: 1
   UseCustomStartAnchoredPosition: 1
-  CloseSpeed: 10
-  OpenSpeed: 10
+  CloseSpeed: 5
+  OpenSpeed: 5
   RenamePrefix: 'Drawer - '
   RenameSuffix: 
