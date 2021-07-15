@@ -128,8 +128,7 @@ public class ShowCarPopup : MonoBehaviour
         
         m_popup.Data.SetButtonsLabels(lockTxt, engineTxt, showTirePressure);
     }
-
-
+    
     private void ClosePopup()
     {
         if (m_popup != null) m_popup.Hide();

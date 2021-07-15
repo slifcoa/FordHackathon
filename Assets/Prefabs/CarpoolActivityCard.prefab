@@ -4798,6 +4798,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6637965526480184330}
   - component: {fileID: 6198081068029700484}
+  - component: {fileID: 4550190739917637285}
   m_Layer: 0
   m_Name: CarpoolActivityCard
   m_TagString: Untagged
@@ -4852,6 +4853,22 @@ MonoBehaviour:
   m_FlexibleWidth: 1
   m_FlexibleHeight: 1
   m_LayoutPriority: 1
+--- !u!114 &4550190739917637285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7548122147406917421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8c1fc333c8a45a41b04b48c919978ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  driverSpriteImg: {fileID: 9162080499857066304}
+  passengerSpriteImg: {fileID: 3643034330252432330}
+  driverUsernameUI: {fileID: 6759030589984235307}
+  descUI: {fileID: 6444411174448568245}
 --- !u!1 &7852656137368531551
 GameObject:
   m_ObjectHideFlags: 0

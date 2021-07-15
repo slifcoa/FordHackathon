@@ -8447,6 +8447,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button - 2 @ 160x48 - Circle - Text
       objectReference: {fileID: 0}
+    - target: {fileID: 2524703514428349326, guid: 841c32878f65851489249f42f7a11b9b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2865594899419106789, guid: 841c32878f65851489249f42f7a11b9b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
