@@ -8,33 +8,9 @@ using UnityEngine;
 
 public class DatabaseManager : MonoBehaviour
 {
-    [Header("Register User Information")] 
-    public string userToRegister = "";
-
-    public string emailToRegister = "";
-    public string passwordToRegister = "";
-    
-    
     [Header("Login User Information")]
     public string emailToLogin = "ememy@yahoo.com";
-
     public string passwordToLogin = "mashedpotatoes";
-    
-    [Header("User Information")]
-    public string vin = "1234567895";
-
-    public string handle = "@jimmyjoe";
-    public string username = "buddha";
-
-    [Header("Ride Information")] public string departing = "Mcdonalds";
-    public string destination = "Wendys";
-    public string timestamp = "123456";
-
-    [Header("Friend Id")] 
-    public string friendIdToAdd = "1234556";
-
-    [Header("Carpool Friend Id")] public string rideIdToAdd = "";
-    public string carpoolFriendIdToAdd = "1234556";
 
     public FirebaseAuth auth;
     public DatabaseReference DBreference;
@@ -72,63 +48,9 @@ public class DatabaseManager : MonoBehaviour
         myCarpools = new List<Carpools>();
     }
 
-    [ContextMenu("RegisterUser")]
-    void AddUserEntry()
+    IEnumerator AddCarpoolEntry(string ride_id)
     {
-        StartCoroutine(RegisterUser(emailToRegister, passwordToRegister, userToRegister));
-    }
-
-    [ContextMenu("LoginUser")]
-    void LoginUser()
-    {
-        StartCoroutine(LoginUser(emailToLogin, passwordToLogin));
-    }
-
-    [ContextMenu("AddUserInfo")]
-    void AddUserVin()
-    {
-        StartCoroutine(UpdateUserInfo(vin, username, handle));
-    }
-
-    [ContextMenu("AddUserRides")]
-    void AddUserRide()
-    {
-        StartCoroutine(AddUserRide(departing, destination, timestamp));
-    }
-
-    [ContextMenu("AddFriendId")]
-    void AddFriend()
-    {
-        StartCoroutine(AddFriend(friendIdToAdd, timestamp));
-    }
-
-    [ContextMenu("GetMyRides")]
-    void MyRides()
-    {
-        StartCoroutine(GetMyRides());
-    }
-
-    [ContextMenu("GetMyFriends")]
-    void MyFriends()
-    {
-        StartCoroutine(GetMyFriends());
-    }
-
-    [ContextMenu("AddCarpool")]
-    void AddCarpool()
-    {
-        StartCoroutine(AddCarpoolEntry());
-    }
-
-    [ContextMenu("GetMyCarpools")]
-    void MyCarpools()
-    {
-        StartCoroutine(GetMyCarpools());
-    }
-
-    IEnumerator AddCarpoolEntry()
-    {
-        Carpools carpools = new Carpools(rideIdToAdd, user.UserId);
+        Carpools carpools = new Carpools(ride_id, user.UserId);
         var json = JsonUtility.ToJson(carpools);
         var key = DBreference.Child("carpools").Push().Key;
 
@@ -333,7 +255,7 @@ public class DatabaseManager : MonoBehaviour
 
     IEnumerator AddUserRide(string _startingLoc, string _endingLoc, string _timestamp)
     {
-        Ride ride = new Ride(_startingLoc, _endingLoc, timestamp, this.user.UserId);
+        Ride ride = new Ride(_startingLoc, _endingLoc, _timestamp, this.user.UserId);
         
         string json = JsonUtility.ToJson(ride);
         var key = DBreference.Child("rides").Push().Key;
