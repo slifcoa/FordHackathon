@@ -15,32 +15,32 @@ MonoBehaviour:
   m_themeName: Neumorph One
   SerializedGuid: 4970eed67e2b864e9e16a851bb1066cb
   m_activeVariant:
-    m_variantName: LightBlue
-    SerializedGuid: 521b72fe6642c249a1de7912087d7763
+    m_variantName: DarkBlueGray
+    SerializedGuid: 57fb0606323e8542bf0c11b19561dbe8
     Colors:
-    - m_color: {r: 0.8784314, g: 0.8980392, b: 0.9254902, a: 1}
+    - m_color: {r: 0.18039216, g: 0.19215688, b: 0.21568629, a: 1}
       SerializedGuid: b877d9291556af45abccf231c9d58bb9
-    - m_color: {r: 0.17911176, g: 0.19398901, b: 0.21698111, a: 1}
+    - m_color: {r: 0.87843144, g: 0.8980393, b: 0.92549026, a: 1}
       SerializedGuid: 819655143e83ec45a23d672ee8116674
-    - m_color: {r: 1, g: 1, b: 1, a: 1}
+    - m_color: {r: 0.24635102, g: 0.26856533, b: 0.3018868, a: 1}
       SerializedGuid: b93618c3687bd341b73d188a35bb2704
-    - m_color: {r: 0.6392157, g: 0.69411767, b: 0.7764706, a: 1}
+    - m_color: {r: 0.07249023, g: 0.077456415, b: 0.084905684, a: 1}
       SerializedGuid: 7d1af3cfa9b2a4468fee485f1c71fd3f
-    - m_color: {r: 0.5137255, g: 0.5568628, b: 0.62352943, a: 1}
+    - m_color: {r: 0.3820755, g: 0.44782117, b: 0.509434, a: 1}
       SerializedGuid: 2c3d61b82e5f674f9dab31c31fe71403
-    - m_color: {r: 0.9198113, g: 0.9495108, b: 1, a: 1}
+    - m_color: {r: 0.16068885, g: 0.18079323, b: 0.21698111, a: 1}
       SerializedGuid: b6763944bee8a3469bac2bd81bb39853
-    - m_color: {r: 1, g: 1, b: 1, a: 1}
+    - m_color: {r: 0.30793878, g: 0.3352108, b: 0.3773585, a: 1}
       SerializedGuid: d47e09bcb4cbc741bee55e0b76efed2d
-    - m_color: {r: 0.9811321, g: 0.4057704, b: 0.032395888, a: 1}
+    - m_color: {r: 0.98039216, g: 0.44628298, b: 0.031372555, a: 1}
       SerializedGuid: a746e812ac41054db444531dcdbc8a78
-    - m_color: {r: 0.9333334, g: 0.38431376, b: 0.38431376, a: 1}
+    - m_color: {r: 0.9433962, g: 0.26254895, b: 0.26254895, a: 1}
       SerializedGuid: d584b67f4a348d439c25cd7532df4a12
-    - m_color: {r: 0.37833747, g: 0.735849, b: 0.44303, a: 1}
+    - m_color: {r: 0.2946778, g: 0.8113208, b: 0.38784295, a: 1}
       SerializedGuid: 44117a653df11e4383a4c1c6d14bf0ce
-    - m_color: {r: 0.18431371, g: 0.7113189, b: 1, a: 1}
+    - m_color: {r: 0.18431373, g: 0.70980394, b: 1, a: 1}
       SerializedGuid: af8d8aa2adac5141978b6efab762f177
-    - m_color: {r: 1, g: 0.2688679, b: 0.7791723, a: 1}
+    - m_color: {r: 1, g: 0.11792451, b: 0.7344287, a: 1}
       SerializedGuid: 93db87742786a44bbcce4e3cb6102845
     Sprites: []
     Textures: []

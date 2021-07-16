@@ -1,0 +1,37 @@
+{
+  "project_info": {
+    "project_number": "1055766612189",
+    "firebase_url": "https://fordhackathon-acabc-default-rtdb.firebaseio.com",
+    "project_id": "fordhackathon-acabc",
+    "storage_bucket": "fordhackathon-acabc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055766612189:ios:3c4dd9a1a0f79255607334",
+        "android_client_info": {
+          "package_name": "com.SliffyPhilly.FordHackathon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1055766612189-a4e8rlmdtvrfnenpbul0hq7ue20oh21a.apps.googleusercontent.com"
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbxNinq1NOm7iIlBtq3Tp9-tPqTfbvbqU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
